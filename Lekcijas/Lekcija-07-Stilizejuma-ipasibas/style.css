@@ -1,0 +1,48 @@
+/*.text{
+
+}
+
+#identifikators{
+    display: block;
+    margin-top: 50px;
+} */
+
+.block {
+    /*width: 500px;
+    height: 1200px;
+    background-color: rgb(130, 132, 136);
+    background-image: url(https://www.w3schools.com/colors/img_colormap.gif);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 30%; 
+    background-attachment: fixed;
+    background-attachment: inherit;
+    
+    font-family: Tahoma, Arial;
+    font-size: 25px;
+    font-weight: 600; /
+    font-style: italic;
+    font-variant: all-small-caps; 
+    color: red;
+
+    text-align: left;
+    text-decoration: underline; 
+    text-transform: capitalize;
+    white-space: pre-wrap;
+
+    line-height: 24px;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    text-indent: 1cm;
+    direction: ltr; 
+
+    border: 1px solid; 
+    border-top: none; 
+    border-left: none; 
+    border-right: solid red;
+    border-bottom: solid blue;
+    padding-left: 15px;
+    padding-right: 25px;
+    padding: 0 15px 20px; */
+    
+}
