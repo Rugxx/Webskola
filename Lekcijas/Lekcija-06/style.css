@@ -32,14 +32,14 @@ h1{
     padding: 25px; /* atstarpe no malas */
 }
 
-.b2{
+.b2 {
     background: red;
-    width: 80%;
-    padding: 20px;
+    width: 30%;
+    padding: 30px;
 }
 
 .b2 .nested{
     background: blue;
-    width: 50%;
+    width: 40%;
     color: white;
 }
