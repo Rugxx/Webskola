@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    background-color: rgb(227, 236, 187);
+
+
+}
+
+h1{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(228, 217, 223);
+    color: rgb(79, 113, 117);
+    padding: 50px;
+    text-align: center;
+}
+
+.block{
+    box-sizing: border-box;
+    background-color: teal;
+    width: 400px;
+    height: 170px;
+    text-align: left;
+    padding: 40px;
+    color: rgb(161, 230, 24);
+}
+
+#identifikators .link{
+    color: red;
+}
+
+span::before {
+    content: "\A";
+    white-space: pre;
+}
+
+span::after{
+    content: "\A";
+    white-space: pre;
+}
+
+
