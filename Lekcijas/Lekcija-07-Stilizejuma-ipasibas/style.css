@@ -8,6 +8,7 @@
 } */
 
 .block {
+    white-space: pre-wrap;
     /*width: 500px;
     height: 1200px;
     background-color: rgb(130, 132, 136);
@@ -46,3 +47,162 @@
     padding: 0 15px 20px; */
     
 }
+
+/*
+ul{
+    list-style: none; 
+    margin: 0px; 
+    padding: 0px; 
+    list-style-type: disc;
+}
+*/
+/*
+ul ul{
+    list-style: none; 
+    list-style-position: inside; 
+    list-style-image: url(https://our.umbraco.com/media/wiki/156622/636149698116872086_themespng.png); 
+}
+*/
+/*
+ul li{
+    line-height: 24px;
+}
+ */
+a.link:link{
+    color: red;
+}
+a.link:visited{
+    color: green;
+}
+
+a.link:hover{
+    color: blue;
+}
+
+a.link:active{
+    color: purple;
+}
+
+button:hover{
+    background:red;
+}
+
+button:focus{
+    background: blue;
+}
+
+/*
+li:first-child{
+    color:red;
+}
+
+li:last-child{
+    color: blue;
+}
+odd/even katrs otrais
+li:nth-child(odd){
+    color: green;
+}
+
+li:lang(en){
+    color:red;
+}
+
+li:lang(ru){
+    color:blue;
+}
+
+
+p::first-line{
+    color:red;
+    font-style: italic; 
+    font-size: 20px;
+}
+*/
+
+/*
+p:before{
+    content: 'Text';
+    display: block;
+    font-style: italic;
+    color: red;
+}
+/*
+p:after{
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-size:24px ;
+    background-repeat:no-repeat ;
+    background-image:url(https://i.dlpng.com/static/png/3913446-alert-androidpng-alert-png-256_256_preview.webp) ;
+}
+
+ul li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li:before{
+    content: '' ;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://i.dlpng.com/static/png/3913446-alert-androidpng-alert-png-256_256_preview.webp);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul li{
+    cursor: pointer;
+}
+/*
+div{
+    cursor: pointer;
+    width: 500px;
+    max-height: 100px;
+    overflow: auto;
+    opacity: 50%;
+}
+*/
+/*
+div{
+    background: url(https://www.w3schools.com/colors/img_colormap.gif) no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    opacity: 50%;
+}
+
+div:hover{
+    opacity: 100%;
+}
+*/
+
+/*
+div{
+    width: 100px;
+    height: 100px;
+    background: red;
+
+    border-radius: 30px;
+
+    border-bottom-left-radius: 0px;
+}
+*/
+
+.block .inside-block.subclass p{
+    color: red;
+}
+
+.block .inside-block > p{
+    color: blue;
+}
+
+/*
+div, p, li {
+    color:green;
+}
+*/
