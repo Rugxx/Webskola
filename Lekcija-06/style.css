@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+h1{
+    color: red;
+    background: rgb(155, 155, 173);
+}
+
+.block{
+    color: blue;
+}
+
+#identifikators{
+    font-size: 28px;
+}
+
+#identifikators .link{ /* Ja norada "a" ".link" vieta 
+                        tad visiem <a></a> tagiem */
+    color: red;
+    font-weight: bold;
+}
+
+.B1{
+    box-sizing: content-box; /* izmantojot "content-box" + padding,
+                            laukums palielinas, bet ar "border-box" paliek absoluts
+                            Parasti izmanto Border-box lielam/norm lapaam */
+    background: rgb(160, 122, 122);
+    width: 200px;
+    height: 100px;
+
+    padding: 25px; /* atstarpe no malas */
+}
+
+.b2{
+    background: red;
+    width: 80%;
+    padding: 20px;
+}
+
+.b2 .nested{
+    background: blue;
+    width: 50%;
+    color: white;
+}
