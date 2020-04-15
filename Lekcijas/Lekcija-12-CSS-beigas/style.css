@@ -1,0 +1,92 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.block{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.block .one{
+    background-color:red;
+}
+
+.block .two{
+    background-image: url(https://image.flaticon.com/icons/svg/271/271228.svg);
+    transition: all 5s ease-in-out;
+    transform: rotate(270deg);
+}
+
+.block .three{
+    background-color: blue;
+    transition: .3s ease-in-out;
+    border-radius: 5px; /* visos parlukos sie nestrada AUTOPREFIXER */
+}
+
+.block .three:hover{
+    width: 200px;
+    background: green;
+    transform: rotate(70deg)
+}
+
+.block .four{
+    background-color: yellow;
+    transition: .5s ease-in-out;
+    border-radius: 50px; 
+}
+
+@keyframes animacija{
+    0% {width: 200px; background: red;}
+    75% {width: 100px; background: blue;}
+    100% {width: 200px; background: green;}
+}
+
+.block .four:hover{
+    animation: animacija 1s linear 3;
+
+}
+
+.block .five{
+    background-image: url(https://image.flaticon.com/icons/svg/271/271227.svg);
+    transition: 2s ease;
+}
+
+@keyframes animacija2{
+    
+    33% {width: 50px; height: 150px;}
+    67% {width: 75px; height: 75px;}
+    100% {width: 100px; background-color: purple;}
+}
+.block .five:hover{
+    transform: rotate(360deg);
+    animation: animacija2 4s ease infinite;   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,400&display=swap');
+
+p{
+    width: 600px;
+    font-weight: 400;
+}
+
+h1 {
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
