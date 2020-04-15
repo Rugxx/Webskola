@@ -1,6 +1,9 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,12 +27,18 @@
 
 .block .two{
     background-image: url(https://image.flaticon.com/icons/svg/271/271228.svg);
+    -webkit-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
     transition: all 5s ease-in-out;
-    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
 }
 
 .block .three{
     background-color: blue;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
     border-radius: 5px; /* visos parlukos sie nestrada AUTOPREFIXER */
 }
@@ -37,13 +46,23 @@
 .block .three:hover{
     width: 200px;
     background: green;
-    transform: rotate(70deg)
+    -webkit-transform: rotate(70deg);
+        -ms-transform: rotate(70deg);
+            transform: rotate(70deg)
 }
 
 .block .four{
     background-color: yellow;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     border-radius: 50px; 
+}
+
+@-webkit-keyframes animacija{
+    0% {width: 200px; background: red;}
+    75% {width: 100px; background: blue;}
+    100% {width: 200px; background: green;}
 }
 
 @keyframes animacija{
@@ -53,13 +72,23 @@
 }
 
 .block .four:hover{
-    animation: animacija 1s linear 3;
+    -webkit-animation: animacija 1s linear 3;
+            animation: animacija 1s linear 3;
 
 }
 
 .block .five{
     background-image: url(https://image.flaticon.com/icons/svg/271/271227.svg);
+    -webkit-transition: 2s ease;
+    -o-transition: 2s ease;
     transition: 2s ease;
+}
+
+@-webkit-keyframes animacija2{
+    
+    33% {width: 50px; height: 150px;}
+    67% {width: 75px; height: 75px;}
+    100% {width: 100px; background-color: purple;}
 }
 
 @keyframes animacija2{
@@ -69,8 +98,11 @@
     100% {width: 100px; background-color: purple;}
 }
 .block .five:hover{
-    transform: rotate(360deg);
-    animation: animacija2 4s ease infinite;   
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-animation: animacija2 4s ease infinite;
+            animation: animacija2 4s ease infinite;   
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,400&display=swap');
