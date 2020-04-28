@@ -13,11 +13,6 @@ a{
     text-decoration: none;
 }
 
-.container:after{
-    content: '';
-    display: table;
-    clear: both;
-}
 
 button, .button{
     display: block;
