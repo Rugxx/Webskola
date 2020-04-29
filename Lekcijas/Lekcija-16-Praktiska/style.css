@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.material{
+    background: url(backgrounds/bg2.png);
+    background-blend-mode: lighten;
+    background-color: rgba(125, 46, 185, 0.45);
+    width: 1440px;
+    height: 943px;
+}
+
+
+.icon{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-component{background-image: url(icons/ICON-components.png);}
+.icon-download{background-image: url(icons/ICON-download.png);}
+.icon-twitter{background-image: url(icons/ICON\ Twitter.png);}
+.icon-facebook{background-image: url(icons/ICON\ Facebook.png);}
+.icon-instagram{background-image: url(icons/ICON\ Instagram.png);}
+
+button{
+    background-color: #999999;
+    color: white;
+    font-size: 12px;
+    line-height: 41px;
+    width: 112px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+button.primary{
+    background-color: #9C27B4;
+    width: 111px;
+}
+
+button.info{
+    background-color: #03A9F4;
+    width: 86px;
+}
+
+button.success{
+    background-color: #4CAF50;
+}
+
+button.warning{
+    background-color: #FBC02D;
+    width: 114px;
+}
+
+button.danger{
+    background-color: #F44336;
+    width: 114px;
+}
+
+
