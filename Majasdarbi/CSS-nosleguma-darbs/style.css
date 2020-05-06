@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    background: url(backgrounds/bg2.png);
+    background-blend-mode: lighten;
+    background-color: rgba(125, 46, 185, 0.45);
+    background-position: center;
+    max-width: 1440px;
+    width: 100%;
+    height: 943px;
+    font-family: 'Roboto';
+    border-bottom: solid black 4px;
+    margin-left: 1px;
+    margin-top: 4px;
+    margin-right: -1px;
+
+}
+
+main{
+    height: 7121px;
+    max-width: 1414px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: -41px;
+    margin-left: 14px;
+    margin-right: 12px;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1167px;
+    width: 100%;
+    height: 435px;
+    margin: 30px 139px;
+    font-weight: 300;
+    color:white;
+}
+
+.barnav{
+    display: flex;
+    height: 50px;
+}
+
+.logo{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-tim{
+    
+    background-image: url(logos/Logo-tim.png);
+}
+
+.tim{
+    padding-top: 7px;
+    font-size: 18px;
+    padding-left: 8px;
+    line-height: 21px;
+    width: 70px;
+    height: 50px;
+    text-transform: capitalize;
+}
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+.nav-bar2{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    padding: 14px 0;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    height: 50px;
+}
+
+.nav-bar3{
+    font-weight: bold;
+    font-size: 64px;
+    text-transform: capitalize;
+    line-height: 75px;
+    height: 75px;
+    width: 353px;
+    margin-left: 404px;
+    margin-top: 229px;
+    margin-bottom: 12px;
+}
+
+.nav-bar4{
+    width: 449px;
+    height: 57px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 358px;
+}
+
+p{
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+
+.icon{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-component{
+    margin-right: -5px;
+    background-image: url(icons/ICON-components.png);}
+.icon-download{
+    margin-left: 30px;
+    background-image: url(icons/ICON-download.png);}
+.icon-twitter{
+    width: 19px;
+    margin-left: 25px;
+    background-image: url(icons/ICON\ Twitter.png);}
+.icon-facebook{
+    width: 18px;
+    margin-left: 24px;
+    background-image: url(icons/ICON\ Facebook.png);}
+
+.icon-instagram{
+    width: 18px;
+    margin-left: 25px;
+    background-image: url(icons/ICON\ Instagram.png);}
+
+
+
+
+
+button{
+    background-color: #999999;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 41px;
+    width: 112px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+button.primary{
+    background-color: #9C27B4;
+    width: 111px;
+}
+
+button.info{
+    background-color: #03A9F4;
+    width: 86px;
+}
+
+button.success{
+    background-color: #4CAF50;
+}
+
+button.warning{
+    background-color: #FBC02D;
+    width: 114px;
+}
+
+button.danger{
+    background-color: #F44336;
+    width: 114px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    display: block;
+    font-weight: 300;
+    font-family: 'Roboto';
+}
+
+h1{
+    font-size: 60px;
+    line-height: 70px;
+}
+
+h2{
+    font-size: 41px;
+    line-height: 48px;
+}
+
+h3{
+    font-size: 29px;
+    line-height: 34px;
+}
+
+h4{
+    font-size: 20px;
+    line-height: 23px;
+}
+
+h5{
+    font-size: 20px;
+    line-height: 23px;
+}
+
+h6{
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.forma{
+    margin: 0 33%;
+    display: flex;
+    flex-direction: column;
+    width: 100px
+}
+
+.avatar{
+    width: 170px;
+    height: 170px;
+}
+
+.avatar.beard{
+    background-size: contain;
+    border: solid;
+    border-radius: 100px;
+    background-image: url(avatars/Avatar.jpg);
+    background-size: contain;
+}
