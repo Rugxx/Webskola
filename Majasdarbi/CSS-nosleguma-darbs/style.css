@@ -66,7 +66,6 @@ ul .rect{
 
 /*                  MAIN                */
 
-main{}
 
 .card-s{
     position: relative;
@@ -77,9 +76,6 @@ main{}
     margin: 51px 8.89% 0 9.177%;
 }
 
-.cheader{
-
-}
 
 .sgnup{
     padding-top: 32px;
@@ -113,12 +109,54 @@ main{}
     height: 21px;
 }
 
+.icon-download{
+    background-image: url(icons/ICON-download.png);
+}
+
+.icon-ig{
+    background-image: url(icons/ICON\ Instagram.png);
+}
+
 .icon-ggl{
     background-image: url(icons/ICON\ GOOGLE+.png);
     margin-left: 9.72%;
     width: 24px;
     height: 21px;
 }
+
+.icon-firstname{
+    background-image: url(icons/ICON\ Firstname.png);
+    width: 24px;
+    height: 24px;
+}
+
+.icon-email{
+    background-image: url(icons/ICON\ email.png);
+    width: 24px;
+    height: 24px;
+}
+
+.icon-password{
+    background-image: url(icons/ICON\ password.png);
+    width: 24px;
+    height: 24px;
+}
+
+.icon-c{
+    background-image: url(icons/ICON\ copyright.png);
+    height: 12px;
+    width: 12px;
+    margin-top: 2px;
+}
+
+.icon-heart{
+    background-image: url(icons/ICON\ heart.png);
+    width: 15px;
+    height: 12px;
+    margin-right: 2px;
+}
+
+
 
 .content-s{
     height: 477px;
@@ -133,15 +171,189 @@ main{}
 }
 
 .inpt-txt{
-    color: black;
+    color: rgba(0, 0, 0, 0.87);
     font-size: 14px;
     line-height: 16px;
     text-transform: capitalize;
+    font-weight: 400;
 }
 
 .gstrt{
+    margin-top: 44px;
     color: #9C27B0;
     text-transform: uppercase;
 }
 
-footer{}
+form{
+    margin: 34px 7.75% 0 6.5%;
+}
+
+input{
+    display: block;
+    color: #999999;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    margin-left: 15px;
+    border: none;
+    border-color: #D2D2D2;
+    border-bottom: solid 1px;
+    width: -webkit-fill-available;
+}
+
+.inpt{
+    display: flex;
+    height: 32px;
+}
+
+.inpt-email{
+    margin-top: 47px;
+}
+
+.inpt-password{
+    margin-top: 47px;
+}
+footer{
+    height: 63px;
+    margin: 66px 18% 0 7.25%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-end{
+    display: flex;
+    margin: 30px 7.1% 0 18%;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+}
+
+.nav-bar2{
+    display: none;
+}
+
+@media screen and (min-width: 786px){
+
+    body{
+        background-image: url(BG/BG-big.png);
+    }
+
+    .rect{display: none;}
+
+    ul{
+        display: flex;
+    }
+
+    .nav-bar2{
+        display: flex;
+        margin-left: 36.4%;
+
+    }
+
+    .navtxt{
+        margin-top: 28px;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .n-icon-download{
+        background-image: url(icons/ICON-download.png);
+        margin: 25px 6px 0 30px;
+    }
+
+    .n-icon-tw{
+        background-image: url(icons/ICON\ Twitter.png);
+        width: 19px;
+        height: 23px;
+        margin: 23px 0 0 27px;
+    }
+
+    .n-icon-fb{
+        background-image: url(icons/ICON\ Facebook.png);
+        width: 18px;
+        height: 20px;
+        margin: 23px 0 0 24px;
+    }   
+
+    .n-icon-ig{
+        background-image: url(icons/ICON\ Instagram.png);
+        width: 18px;
+        height: 20px;
+        margin: 23px 0 0 24px;
+    }
+
+    .card-s{
+        height: 150px;
+        margin: 52px 29.9% 0 30%;
+    }
+
+    .content-s{
+        margin: -110px 27.5% 0 27.6%;
+    }
+
+    footer{
+        margin: 74px 35% 0 5.09%;
+    }
+
+    .flex-container{
+        justify-content: unset;
+    }
+
+    .footertxt{
+        margin: 0 7.23% 0 0;
+    }
+
+    .footer-end{
+        margin: 31px 0 0 0;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    body{
+        background-image: url(BG/BG-desktop.png);
+    }
+
+    nav{
+        height: 23px;
+        background-color: unset;
+        margin: 38px 10.9% 0 10%;
+    }
+
+    .crtim,.nav-bar2,.navtxt{margin:0;}
+
+    .n-icon-download,.n-icon-tw,.n-icon-fb,.n-icon-ig{margin-top: 0;}
+
+    .navtxt{margin-top: 5px}
+    
+    .nav-bar2{margin-left: 48.959%;}
+
+    .card-s{margin: 60px 38.75% 0 38.75%}
+
+    .content-s{margin: -110px 37.29% 0 37.36%;}
+
+    footer{
+        margin:72px 10% 0 11.11%;
+        display: inline-flex;
+        height: 17px;
+        white-space: nowrap;
+        width: -webkit-fill-available;
+        justify-content: space-between;
+    }
+
+    .footertxt{
+        margin: 1px 15.49% 1px 0;
+    }
+
+    .footer-end{margin: 0;}
+}
