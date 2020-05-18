@@ -8,6 +8,10 @@ a{
     text-decoration: none;
 }
 
+.avatar-link{
+    color: purple;
+}
+
 body{
     margin:0;
 
@@ -157,6 +161,81 @@ ul .rect{
     margin-right: 2px;
 }
 
+.icon-triangle{
+    background-image: url(icons/ICON\ PLAY.png);
+    width: 15px;
+    height: 18px;
+    margin:0 3px 0 36px;
+}
+
+.icon-message{
+    background-image: url(icons/icon-message.png);
+    width: 70px;
+    height: 70px;
+    margin: 0 131px 0 127px;
+}
+
+.icon-2nd-feature{
+    background-image: url(icons/ICON-2nd\ feature.png);
+    width: 70px;
+    height: 70px;
+    margin: 0 129px 0 129px;
+
+}
+
+.icon-3rd-feature{
+    background-image: url(icons/ICON-3rd-feature.png);
+    width: 70px;
+    height: 70px;
+    margin: 0 129px 0 129px;
+
+}
+
+.a-icon-tw{
+    background-image: url(icons/ICON\ TWITTER-a.png);
+    width: 17px;
+    height: 18px;
+}
+
+.a-icon-ig{
+    background-image: url(icons/ICON\ INSTAGRAM-a.png);
+    width: 16px;
+    height: 18px;
+    margin: 0 29px 0 29px;
+}
+
+.a-icon-fb{
+    background-image: url(icons/ICON\ FACEBOOK-a.png);
+    width: 16px;
+    height: 18px;
+}
+
+.a-icon-ld{
+    margin-left: 29px;
+    background-image: url(icons/ICON\ LINKEDIN-a.png);
+    width: 16px;
+    height: 18px;
+}
+
+.avatar{
+    width: 170px;
+    height: 170px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 90px;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-gigi-1{
+    background-image: url(avatar/AVATAR-gigi.png);
+    margin: 86px 119px 0 116px;
+}
+
+.avatar-chris-1{
+    background-image: url(avatar/AVATAR-chris.png);
+    margin: 19px 117px 0 118px;
+}
 
 
 .content-s{
@@ -263,7 +342,6 @@ footer{
 }
 
 .header-content{
-    border: solid 1px pink;
     height: 416px;
     margin: 112px 6.35% 0 3.53%;
 }
@@ -372,7 +450,7 @@ footer{
 
     footer{
         margin:72px 10% 0 11.11%;
-        display: inline-flex;
+        display: flex;
         height: 17px;
         white-space: nowrap;
         width: -webkit-fill-available;
@@ -384,4 +462,189 @@ footer{
     }
 
     .footer-end{margin: 0;}
+}
+
+
+
+/* ################             LANDIND                     */
+
+
+.nav-land-62px{
+    height: 62px;
+}
+
+.nav-land-15px{
+    margin: 15px 0 0 15px;
+}
+
+ul .rect-0{
+    margin: 15px 25px 0 0;
+}
+
+.title-53-2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 53.2px;
+    line-height: 62px;
+    margin-left: 2px;
+
+}
+
+.title-18-2{
+    margin-top: 9px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18.2px;
+    line-height: 25px;
+}
+
+.red-watch{
+    margin: 42px 0 0 1px;
+    width: 179px;
+    height: 54px;
+    background: #F44336;
+    box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    display: flex;
+    text-transform: uppercase;
+    padding: 0;
+    border:none;
+}
+
+.rnd-red-watch{
+    font-weight: 300;
+    margin-top: 2px;
+}
+
+.content-landing{
+    height: 3718px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin: -54px 10px 0 10px;
+}
+
+.smol-h-landing-conent-h{
+    text-transform: unset;
+    margin: 94px 64px 0 64px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36.4px;
+    line-height: 43px;
+    color: #3C4858;
+}
+
+.smol-h-landing-conent-h-2{
+    margin: 38px 16px 0 21px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17.5px;
+    line-height: 21px;
+    text-align: center;
+    color: #999999;
+}
+
+.first-feature{
+    margin: 162px 36px 0 41px;
+}
+
+.second-feature{
+    margin: 108px 39px 0 38px;
+}
+
+.third-feauture{
+    margin: 110px 39px 0 38px;
+}
+
+.first-ic-h-1{
+    margin-top: 31px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #3C4858;
+    text-transform: capitalize;
+}
+
+.first-ic-h-2{
+    margin-top: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+}
+
+.avatar-name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.2px;
+    line-height: 21px;
+    color: #3C4858;
+    margin: 32px 0 0 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.avatar-job{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.65px;
+    line-height: 16px;
+    color: #777777;
+    margin: 7px 0 0 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.gigi-mobile-name{
+    margin-right: 4px;
+}
+
+.gigi-mobile-job{
+    margin-right: 1px ;
+}
+
+.avatar-description{
+    margin: 34px 15px 0 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+}
+
+.chris{
+    margin-top: 35px;
+    height: 124px;
+}
+
+.avatar-icons-1{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-icons-2{
+    margin-top: -14px;
+    display: flex;
+    justify-content: center;
 }
