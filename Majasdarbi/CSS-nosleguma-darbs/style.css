@@ -177,14 +177,14 @@ ul .rect{
     background-image: url(icons/ICON\ PLAY.png);
     width: 15px;
     height: 18px;
-    margin:0 3px 0 36px;
+    margin: 19px 3px 17px 36px;
 }
 
 .icon-message{
     background-image: url(icons/icon-message.png);
     width: 70px;
     height: 70px;
-    margin: 0 131px 0 127px;
+    margin: 0 2px 0 0;
 }
 
 .icon-2nd-feature{
@@ -299,6 +299,7 @@ form{
 
 .landing-form-mob{
     margin: 47px 0 0 0;
+    color:999999;
 }
 
 .inpt.landing-form-name{
@@ -407,10 +408,34 @@ footer{
     margin: 112px 6.35% 0 3.53%;
 }
 
-@media screen and (min-width: 786px){
+
+
+
+@media screen and (min-width: 768px){
+
+    div.content-landing{
+        margin-top: -62px ;
+    }
 
     body{
         background-image: url(BG/BG-big.png);
+    }
+
+    .Header-2{
+        background-image: url(BG/BG\ HEADER-2.png);
+        height: 597px;
+    }
+
+    button.red-watch{
+        margin: 43px 0 0 0;
+    }
+
+    .header-content{
+        margin: 107px 3.65%  0 3.13%;
+    }
+
+    div.smol-h-landing-conent-h-2{
+        margin: 38px 12px 0 13px;
     }
 
     .rect{display: none;}
@@ -458,6 +483,19 @@ footer{
         margin: 23px 0 0 24px;
     }
 
+    div.first-feature{
+        margin: 162px 0 0 28.74%;
+    }
+
+    div.second-feature{
+        margin: 107px 0 0 28.47%;
+    }
+
+    div.third-feauture{
+        margin: 110px 0 0 28.075%;
+    }
+
+
     .card-s{
         height: 150px;
         margin: 52px 29.9% 0 30%;
@@ -482,6 +520,55 @@ footer{
     .footer-end{
         margin: 31px 0 0 0;
         float: right;
+    }
+
+    div.gigi-grid{
+        width: 713px;
+        margin: 86px 16px 0 19px;
+    }
+
+    div.avatar-gigi-1{
+        margin: 0;
+        place-self: center;
+
+    }
+
+    div.avatar-chris-1{
+        margin: 0;
+        place-self: center;
+    }
+
+    div.avatar-kendall-1{
+        margin:0 2px 0 0;
+        place-self: center;
+    }
+
+    div.avatar-description{
+        margin: 34px 0 0 0;
+    }
+
+    div.tab-chris{
+        margin-top: 20px;
+    }
+
+    div.tab-kendall{
+        margin: 21px 16px 0 19px;
+    }
+
+    div.description-chris{
+        height: unset;
+    }
+
+    div.description-kendall{
+        height: unset;
+    }
+
+    div.avatar-icons-2{
+        margin-top: 38px;
+    }
+
+    div.avatar-icons-3{
+        margin-top: 38px;
     }
 }
 
@@ -559,15 +646,14 @@ ul .rect-0{
     margin-top: 9px;
     font-family: Roboto;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18.2px;
     line-height: 25px;
-    text-align: center;
-    color: #999999;
+    color: #FFFFFF;
 }
 
 .red-watch{
-    margin: 42px 0 0 1px;
+    margin: 42px 0 0 0;
     width: 179px;
     height: 54px;
     background: #F44336;
@@ -585,9 +671,9 @@ ul .rect-0{
     border:none;
 }
 
-.rnd-red-watch{
-    font-weight: 300;
-    margin-top: 2px;
+.red-watch-txt{
+    margin: 19px 0 0 0;
+    display: flex;
 }
 
 .content-landing{
@@ -601,13 +687,15 @@ ul .rect-0{
 .smol-h-landing-conent-h{
     display: inline-flex;
     text-transform: unset;
-    margin: 94px 64px 0 64px;
+    margin: 94px 0 0 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     font-size: 36.4px;
     line-height: 43px;
     color: #3C4858;
+    width: 100%;
+    place-content: center;
 }
 
 .smol-h-landing-conent-h-2{
@@ -619,19 +707,19 @@ ul .rect-0{
     line-height: 21px;
     text-align: center;
     color: #999999;
-    height: 139px;
 }
 
 .smol-h-landing-conent-h-3{
-    display: inline-flex;
+    display: flex;
     text-transform: unset;
-    margin: 207px 69px 0 68px;
+    margin: 207px 0 0 1px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     font-size: 36.4px;
     line-height: 43px;
     color: #3C4858;
+    justify-content: center;
 }
 
 .wrk-w-us{
@@ -641,21 +729,28 @@ ul .rect-0{
 }
 
 .first-feature{
+    display: grid;
     margin: 162px 36px 0 41px;
+    place-items: center;
+    width: 328px;
 }
 
 .second-feature{
+    display: grid;
     margin: 108px 39px 0 38px;
-    height: 201px;
+    place-items: center;
+    width: 328px;
 }
 
 .third-feauture{
+    display: grid;
     margin: 110px 39px 0 38px;
-    height: 201px;
+    place-items: center;
+    width: 328px;
 }
 
 .first-ic-h-1{
-    margin-top: 31px;
+    margin: 31px 0 0 0;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -752,6 +847,14 @@ ul .rect-0{
 
 .px37{
     margin: 37px 0 0 0;
+    color:#999999;
+    text-align: center;
+    font-weight: 300;
+}
+
+.gigi-grid{
+    display: grid;
+    width: 372px;
 }
 
 button{
