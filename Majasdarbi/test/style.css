@@ -1,35 +1,116 @@
-*{margin: 0}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-.team{
-    display: grid;
+
+*{
+    margin: 0;
+    font-weight: 300;
+}
+
+/*                  BODY                  */
+
+/*                  BG                      */
+
+.BG.signup-page{
+    background-image: url(BG/sgnup-mobile.png);
     height: 794px;
-    width: 100%;
-    margin: 10px;
-    background-color: teal;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*                  NAV-BAR              */
+
+.nav-bar{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4)
+
+}
+
+.C-tim{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+
+}
+
+.C-tim.sgnup-mob{
+    margin: 24px 0 0 13px;
+}
+
+.rect{
+    margin: 27px 23px 0 0;
+    background-image: url(ICON/rect.png);
+    width: 22px;
+    height: 2px;
+}
+
+.rect.viens{
+    margin: 0 0 4px 0;
+}
+
+/*                   CARD                        */
+
+.signup-card{
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 23px;
+    margin: 51px 12px 0 13px;
+    height: 517px;
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+}
+
+.signup-header{
+    margin: 0 20px 0 20px;
+    background: linear-gradient(90deg, #AB47BC 0%, #7B1FA2 100%);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12), 0px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    height: 150px;
+    display: grid;
     justify-content: center;
 }
 
-.gigi{
-    margin: 10px;
-    width: 200px;
-    height: 200px;
+.txt-sgn-up{
+    margin: 32px 0 0 1px;
 }
 
-.one{
-    background-color: red;
+
+/*                      ICONS                       */
+
+.icon{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
 }
 
-.two{
-    background-color: blue;
+.icon-fb{
+    background-image: url(ICON/ICON\ GOOGLE+.png);
 }
 
-.three{
-    background-color: purple;
+.icon-tw{
+    background-image: url(ICON/ICON\ Twitter.png);
 }
 
-@media screen and (min-width: 1280px){
-    div.team{
-        display: flex;
-        flex-wrap: wrap;
-    }
+.icon-ggl{
+    background-image: url(ICON/ICON\ GOOGLE+.png);
+}
+
+.sgn-up-icons{
+    margin: 0 0 0 6px;
+    display: flex;
+}
+
+.icon.sgnup-mobile-tw{
+    margin: 0 35px 0 38px;
 }
