@@ -1126,7 +1126,7 @@ button{
         width: 100%;
     }
 
-    .inpt-firstname,.inpt-email{
+    .inpt-firstname.lnd,.inpt-email.lnd{
         margin-bottom: 51px;
         width: 47.94%;
     }
