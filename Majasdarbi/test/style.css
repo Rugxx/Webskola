@@ -40,6 +40,15 @@ a{
     background-size: cover;
 }
 
+.BG.profile-page{
+    background-image: url(BG/profile-mobile.png);
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E5E5E5;
+}
+
 /*                  NAV-BAR              */
 
 .nav-bar{
@@ -55,7 +64,10 @@ a{
     height: 62px;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.4)
+}
 
+.nav-bar.bar-profile{
+    margin-bottom: 310px;
 }
 
 .nav-bar2{
@@ -65,7 +77,7 @@ a{
 .C-tim{
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 18px;
     line-height: 21px;
     text-transform: capitalize;
@@ -82,11 +94,19 @@ a{
     margin: 15px 0 0 15px;
 }
 
+.C-tim.profile-mob{
+    margin: 24px 0 0 15px;
+}
+
 .rect{
     margin: 27px 23px 0 0;
     background-image: url(ICON/rect.png);
     width: 22px;
     height: 2px;
+}
+
+.rect.rect-profile{
+    margin: 27px 25px 0 0;
 }
 
 .rect.landing{
@@ -193,10 +213,7 @@ a{
 
 
 
-/*                      CONTENTS                    */
-    /*                  LANDING                     */
-
-
+/*                      CONTENTS  LANDING                  */
 
 
 .content-landing{
@@ -404,6 +421,14 @@ a{
     display: flex;
     justify-content: center;
     margin: 30px 0 0 0;
+}
+
+.avatar-profile-1{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-image: url(avatar/AVATAR-chris.png);
+    margin-top: -79px;
 }
 
 /*                      ICONS                       */
@@ -637,6 +662,79 @@ input{
     margin: 0 0 24px 0;
 }
 
+
+
+
+/*                  CONTENTS PROFILE            */
+
+.content-profile{
+    height: 2313px;
+    margin: -61px 2.118% 0 2.353%;
+    background-color: white;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.content-profile-description{
+    display: flex;
+    justify-content: center;
+    margin: 0 3.448% 0 4.187%;
+}
+
+.profile-chris{
+    margin-top: 102px;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.profile-name{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 25.55px;
+    height: 30px;
+    color: #3C4858;
+    text-align: center;
+}
+
+.profile-title{
+    text-transform: uppercase;
+    margin: 15px 0 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    height: 17px;
+    color: #333333;
+    text-align: center;
+}
+
+.profile-description{
+    margin: 45px 0 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+}
+
+.profile-buttons{
+    margin-top: 76px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-prof{
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 12px;
+    height: 15px;
+}
+
+.photos{
+    margin: 51px 3.448% 0 3.448%;
+}
+
 /*                      Foooter                 */
 
 .footer{
@@ -651,6 +749,12 @@ input{
 
 .footer.landing{
     margin: 33px 17.41% 0 7.059% ;
+    color: black;
+
+}
+
+.footer.profile{
+    margin: 33px 17.41% 27px 7.059% ;
     color: black;
 
 }
@@ -671,9 +775,37 @@ input{
 }
 
 
+/*                      PHOTOS                      */
 
+.photo{
+    border-radius: 6px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+.photo-1{
+    background-image: url(photos/PHOTO\ 1.png);
+    height: 281px;
+}
 
+.photo-2{
+    background-image: url(photos/PHOTO\ 2.png);
+    height: 565px;
+    margin-top: 30px;
+}
+
+.photo-3{
+    background-image: url(photos/PHOTO\ 3.png);
+    height: 500px;
+    margin-top: 29px;
+}
+
+.photo-4{
+    background-image: url(photos/PHOTO\ 4.png);
+    height: 281px;
+    margin-top: 31px;
+}
 /*                      BUTTONS                     */
 
 button{
@@ -693,6 +825,31 @@ button{
 
 }
 
+.button-studio{
+    width: 100px;
+    height: 104px;
+    box-shadow: unset;
+    border-radius: 4px;
+    box-shadow: 0px 4px 20px rgba(156, 39, 176, 0.45);
+
+}
+
+.button-work{
+    background-color: white;
+    height: 104px;
+    width: 100px;
+    margin: 0 3px 0 5px;
+    color: #555555;
+    box-shadow: unset;
+}
+
+.button-favorite{
+    background-color: white;
+    height: 104px;
+    width: 100px;
+    color: #555555;
+    box-shadow: unset;
+}
 
 
 /* .form-landing-button{} */
@@ -719,6 +876,12 @@ button{
     .BG.landing-page{
         background-image: url(BG/landing-tabled.png);
         height: 597px;
+    }
+
+    .BG.profile-page{
+        background-color: #CCCCCC;
+        background-image: url(BG/profile-tablet.png);
+        height: 381px;
     }
 
     .nav-bar.landing{
@@ -879,6 +1042,71 @@ button{
     }
 
 
+/*      768         Profile             */
+
+
+
+.C-tim.profile-mob{
+    margin: 24px 0 0 24px;
+}
+
+.nav-bar2.bar2-landing{
+    margin: 22px 20px 0 0;
+}
+
+.content-profile{
+    height: 3774px;
+    margin: -61px 1.302% 0 1.302%;
+
+}
+
+.content-profile-description{
+    margin: 0 9.626% 0 9.626%;
+    padding-left: 2px;
+}
+
+.profile-description{
+    height: 99px;
+}
+
+.profile-buttons{
+    margin-top: 32px;
+    margin-right: 1px;
+}
+
+.button-work{
+    margin: 0 -2px 0 6px;
+}
+
+.photos{
+    margin: 51px 1.471% 0 1.604%;
+}
+
+.photo-1{
+    background-image: url(photos/PHOTO\ 1-2.png);
+    height: 542px;
+}
+
+.photo-2{
+    background-image: url(photos/PHOTO\ 2-2.png);
+    height: 1081px;
+    margin-top: 29px;
+}
+
+.photo-3{
+    background-image: url(photos/PHOTO\ 3-2.png);
+    height: 961px;
+    margin-top: 29px;
+}
+
+.photo-4{
+    background-image: url(photos/PHOTO\ 4-2.png);
+    height: 541px;
+    margin-top: 30px;
+}
+
+
+
 /*      768        Foooter             */
 
 
@@ -897,12 +1125,18 @@ button{
     .footertxt{
         margin-right: 34px;
     }
+    
+    .footertxt.land{
+        margin-right: 33px;
+    }
 
     .footer-end{
         margin: 31px 0 0 0;
     }
 
-
+    .footer.profile{
+        margin: 45px 34.635% 27px 5.208%;
+    }
 }
 
 /*                      MEDIA    1440px                   */
