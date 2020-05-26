@@ -11,7 +11,16 @@ a{
     text-decoration: none;
 }
 
+.avatar-link{
+    color: purple;
+}
+
 /*                  BODY                  */
+
+.land-page{
+    height: 4442px;
+    background-color:#CCCCCC;
+}
 
 /*                  BG                      */
 
@@ -23,11 +32,27 @@ a{
     background-size: cover;
 }
 
+.BG.landing-page{
+    background-image: url(BG/landing-mobile.png);
+    height: 664px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*                  NAV-BAR              */
 
 .nav-bar{
     display: flex;
     height: 70px;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4)
+
+}
+
+.nav-bar.landing{
+    display: flex;
+    height: 62px;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.4)
 
@@ -53,6 +78,10 @@ a{
     margin: 24px 0 0 13px;
 }
 
+.C-tim.landing-mob{
+    margin: 15px 0 0 15px;
+}
+
 .rect{
     margin: 27px 23px 0 0;
     background-image: url(ICON/rect.png);
@@ -60,8 +89,61 @@ a{
     height: 2px;
 }
 
+.rect.landing{
+    margin: 18px 25px 0 0;
+
+}
+
 .rect.viens{
     margin: 0 0 4px 0;
+}
+
+
+/*                  HEADER                      */
+
+.landing-header-1{
+    margin: 112px 14.82% 0 4%;
+    padding-bottom: 1px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 53.2px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.landing-header-2{
+    margin: 9px 6.353% 0 3.53%;
+    padding: 1px 0 0 1px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18.2px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+}
+
+.red-watch{
+    padding: unset;
+    display: flex;
+    margin: 42px 51.12% 0 3.765%;
+    width: 179px;
+    height: 54px;
+    background-color: #F44336;
+    box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
+    border-radius: 3px;
+}
+
+.red-watch-txt{
+    margin: 19px 0 0 0;
+    padding-top: 1px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
 
 /*                   CARD                        */
@@ -109,6 +191,220 @@ a{
     border-radius: 3px;
 }
 
+
+
+/*                      CONTENTS                    */
+    /*                  LANDING                     */
+
+
+
+
+.content-landing{
+    margin: -54px 2.352% 0 2.352%;
+    height: 3718px;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: white;
+}
+
+
+.landing-content-h1{
+    padding-top: 94px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 36.4px;
+    line-height: 43px;
+    color: #3C4858;
+}
+
+.landing-content-h2{
+    margin: 38px 3.95% 162px 5.185%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 17.5px;
+    line-height: 24px;
+    text-align: center;
+    color: #999999;
+}
+
+.feature{
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.feature-first{
+    display: block;
+    height: 201px;
+    width: 328px;
+    place-items: center;
+    margin: 0 3px 0 0;
+    
+}
+
+.feature-second{
+    display: block;
+    margin-top: 108px;
+    height: 201px;
+    width: 328px;
+    place-items: center;
+    margin: 108px -2px 0 0;
+}
+
+.feature-third{
+    display: block;
+    margin-top: 108px;
+    width: 328px;
+    place-items: center;
+    height: 201px;
+    margin: 108px -2px 0 0;
+}
+
+.feature-name{
+    text-transform: capitalize;
+    margin-top: 31px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    height: 24px;
+    text-align: center;
+    color: #3C4858;
+}
+
+.feature-description{
+    margin-top:18px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+}
+
+.team-L{
+    padding: 0;
+    margin: 207px 0 86px 0;
+}
+
+.form-L1{
+    padding: 0;
+    margin: 0 0 37px 0;
+}
+
+.form-L2{
+    margin: 0 0 47px 0;
+    font-weight: 300;
+    font-size: 18.2px;
+    line-height: 24px;
+    text-align: center;
+    color: #999999;
+}
+
+.team{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.gigi{
+    width: 372px;
+    height: 411px;
+    display: block;
+    place-items: center;
+}
+
+.chris{
+    width: 372px;
+    height: 411px;
+    display: block;
+    place-items: center;
+}
+
+.kendal{
+    width: 372px;
+    height: 411px;
+    display: block;
+    place-items: center;
+}
+
+/*                      AVATARS                     */
+
+.avatar{
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.3), 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.avatar-name{
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 18.2px;
+    line-height: 22px;
+    color: #3C4858;
+    text-transform: capitalize;
+}
+
+.avatar-title{
+    margin-top: 7px;
+    font-weight: 500;
+    font-size: 13.65px;
+    line-height: 16px;
+    color: #777777;
+    text-transform: capitalize;
+}
+
+.avatar-description{
+    margin-top: 34px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    
+}
+
+
+.avatar-gigi{
+    background-image: url(avatar/AVATAR-gigi.png);
+    margin-left: 98px;
+}
+
+.avatar-chris{
+    background-image: url(avatar/AVATAR-chris.png);
+    margin-left: 100px;
+}
+
+.avatar-kendal{
+    background-image: url(avatar/AVATAR-kendal.png);
+    margin-left: 101px;
+}
+
+.gigi-icons{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 19px 0;
+}
+
+.chris-icons{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 21px 0;
+}
+
+.kendal-icons{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 0;
+}
 
 /*                      ICONS                       */
 
@@ -167,8 +463,22 @@ a{
     margin: 3px 4px 0 4px;
 }
 
+.icon-c-L{
+    background-image: url(ICON/icon-c-L.png);
+    height: 12px;
+    width: 12px;
+    margin: 3px 4px 0 4px;
+}
+
 .icon-heart{
     background-image: url(ICON/ICON\ heart.png);
+    margin: 0 4px 0 4px;
+    height: 16px;
+    width: 14px;
+}
+
+.icon-heart-L{
+    background-image: url(ICON/icon-heart-L.png);
     margin: 0 4px 0 4px;
     height: 16px;
     width: 14px;
@@ -197,6 +507,70 @@ a{
     background-image: url(ICON/ICON\ Instagram.png);
     width: 18px;
     height: 20px;
+}
+
+.icon-triangle{
+    background-image: url(ICON/ICON\ PLAY.png);
+    width: 15px;
+    height: 18px;
+    margin: 19px 3px 17px 36px;
+}
+
+.icon-first-f{
+    background-image: url(ICON/ICON-1st-feature.png);
+    width: 100%;
+    height: 70px;
+}
+
+.icon-second-f{
+    background-image: url(ICON/ICON-2nd\ feature.png);
+    width: 100%;
+    height: 70px;
+}
+
+.icon-third-f{
+    background-image: url(ICON/ICON-3rd-feature.png);
+    width: 100%;
+    height: 70px;
+}
+
+.icon-tw-a{
+    background-image: url(ICON/ICON\ TWITTER-a.png);
+    width: 17px;
+    height: 18px;
+}
+
+.icon-ig-a{
+    background-image: url(ICON/ICON\ INSTAGRAM-a.png);
+    margin: 0 29px 0 29px;
+    width: 16px;
+    height: 18px;
+}
+
+.icon-fb-a{
+    background-image: url(ICON/ICON\ FACEBOOK-a.png);
+    width: 16px;
+    height: 18px;
+}
+
+.icon-in-a{
+    background-image: url(ICON/ICON\ LINKEDIN-a.png);
+    margin-left: 29px;
+    width: 16px;
+    height: 18px;
+}
+
+.icon-ggl-a{
+    background-image: url(ICON/ICON\ GOOGLE+-a.png);
+    width: 24px;
+    height: 18px;
+}
+
+.icon-yt-a{
+    background-image: url(ICON/ICON\ YOUTUBE-a.png);
+    margin: 0 28px 0 22px;
+    width: 18px;
+    height: 18px;
 }
 
 .sgn-up-icons{
@@ -241,19 +615,44 @@ input{
     height: 17px;
 }
 
+.form-landing{
+    margin: 185px 2.96% 0 3.7%;
+}
 
+.form-landing-input{
+    text-align: center;
+    margin: 0;
+}
+
+.inpt-firstname{
+    margin:0 0 52px 0 ;
+}
+
+.inpt-email{
+    margin: 0 0 51px 0;
+}
+
+.inpt-message{
+    height: 79px;
+    margin: 0 0 24px 0;
+}
 
 /*                      Foooter                 */
 
-footer{
+.footer{
     font-family: 'Roboto';
-    height: 63px;
     margin: 66px 18% 0 7.25%;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     text-transform: uppercase;
     color: white;
+}
+
+.footer.landing{
+    margin: 33px 17.41% 0 7.059% ;
+    color: black;
+
 }
 
 .flex-container{
@@ -267,9 +666,37 @@ footer{
     text-transform: none;
     font-size: 13px;
     line-height: 16px;
-    font-weight: 300;
+    font-weight: 400;
     justify-content: flex-end;
 }
+
+
+
+
+
+/*                      BUTTONS                     */
+
+button{
+    border:none;
+    width: 148px;
+    height: 41px;
+    background: #9C27B0;
+    box-shadow: 0px 2px 2px rgba(156, 39, 176, 0.2);
+    border-radius: 3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+
+
+/* .form-landing-button{} */
+
 
 /*                      MEDIA    768px                   */
 
@@ -285,8 +712,25 @@ footer{
         background-size: cover;
     }
 
+    .land-page{
+        height: 4135px;
+    }
+
+    .BG.landing-page{
+        background-image: url(BG/landing-tabled.png);
+        height: 597px;
+    }
+
+    .nav-bar.landing{
+        height: 67px;
+    }
+
     .C-tim.sgnup-mob{
         margin: 23px 0 0 24px;
+    }
+
+    .C-tim.landing-mob{
+        margin: 22px 0 0 24px;
     }
 
     .rect{display: none;}
@@ -301,9 +745,124 @@ footer{
         color: white;
     }
 
+    .nav-bar2.landing{
+        margin:21px 36px 0 0;
+    }
+
     .navtxt{
         margin-top: 3px;
     }
+
+    .landing-header-1{
+        margin: 107px 12.5% 0 3.125%;
+    }
+
+    .landing-header-2{
+        margin: 8px 3.646% 0 3.125%;
+    }
+
+    .red-watch{
+        margin: 43px 0 0 3.125%;
+    }
+
+/*                  LANDING CONTENT         */
+
+    .content-landing{
+        height: 3481px;
+        margin: -62px 1.302% 0 1.302%;
+    }
+
+    .landing-content-h2{
+        margin: 38px 1.563% 162px 1.693%;
+    }
+
+    .feature-first{
+        margin: 0 5px 0 0;
+    } 
+
+    .feature-second{
+        margin: 107px 3px 0 0;
+    } 
+
+    .feature-third{
+        margin: 110px 0 0 0;
+    } 
+
+    .team-L{
+        margin: 208px 1px 86px 0;
+
+    }
+
+    .gigi{
+        width: 713px;
+        height: 370px;
+        display: block;
+        place-items: center;
+    }
+    
+    .chris{
+        margin-top: 20px;
+        width: 713px;
+        height: 370px;
+        display: block;
+        place-items: center;
+    }
+    
+    .kendal{
+        margin-top: 21px;
+        width: 713px;
+        height: 369px;
+        display: block;
+        place-items: center;
+    }
+
+
+    .avatar-gigi{
+        margin-left: 270px;
+    }
+    
+    .avatar-chris{
+        margin-left: 270px;
+    }
+    
+    .avatar-kendal{
+        margin-left: 270px;
+    }
+
+    .avatar-description{
+        margin-top: 35px;
+        height: 81px;
+    }
+
+    .gigi-icons{
+        margin-top: -11px;
+    }
+
+    .chris-icons{
+        margin-top: -11px;
+    }
+
+    .kendal-icons{
+        margin-top: -12px;
+    }
+
+    .form-landing{
+        margin-right: 2.139%;
+        margin-left: 2.139%;
+    }
+
+    .form-L2{
+        margin: 38px 0 47px 0;
+        line-height: 21px;
+    }
+    
+    .inpt-message{
+        margin-bottom: 25px;
+    }
+
+    
+
+    /*                  INDEX               */
 
     .signup-card{
         width: 44.911%;
@@ -319,8 +878,16 @@ footer{
         margin: 33px 5.38% 0 7.366%;
     }
 
-    footer{
-        margin: 74px 34.99% 0 5.208%;
+
+/*      768        Foooter             */
+
+
+    .footer{
+        margin: 74px 34.99% 0 5.09%;       
+    }
+
+    .footer.landing{
+        margin: 31px 35.156% 0 5.078%;
     }
 
     .flex-container{
@@ -351,6 +918,15 @@ footer{
         background-size: cover;
     }
 
+    .land-page{
+        height: 2792px;
+    }
+
+    .BG.landing-page{
+        background-image: url(BG/landing-desktop.png);
+        height: 726px;
+    }
+
     .nav-bar{
         height: 61px;
         background-color: transparent;
@@ -358,12 +934,45 @@ footer{
         padding-top: 38px;
     }
 
+    .nav-bar.landing{
+        height: 61px;
+        background-color: transparent;
+        margin: 0 11.25% 0 10.4167%;
+        padding-top: 37px;
+    }
+
     .nav-bar2{
         margin: 0;
     }
 
+    .nav-bar2.landing{
+        margin: 0;
+        padding:0;
+    }
+
+    .landing-header-content{
+        margin: 146px 51.528% 0 10.347%;
+    }
+    
+    .landing-header-1{
+        margin: 0px 16px 0 3px;
+    }
+
+    .landing-header-2{
+        line-height: 23px;
+        margin: 11px 0 0 0;
+    }
+    
+    .red-watch{
+        margin: 42px 0 0 2px;
+    }
+
     .C-tim.sgnup-mob{
         margin: 1px 0 0 0;
+    }
+    
+    .C-tim.landing-mob{
+        margin: 2px 0 0 0;
     }
 
     .signup-card{
@@ -385,8 +994,165 @@ footer{
         margin: 33px 8.49% 0 7.12%;
     }
 
-    footer{
-        margin: 73px 10% 0 11.11%;
+    /*        1440          LANDING CONTENT         */
+
+    .content-landing{
+        height: 2045px;
+        margin: -60px 2.0833% 0 2.0833%;
+    }
+
+    .landing-content-h1{
+        padding-top: 95px;
+    }
+
+    .landing-content-h2{
+        margin: 38px 23.623% 161px 23.986%;
+    }
+
+    .feature{
+        display: flex;
+    }
+
+    .feature-first{
+        display: block;
+        margin: 0;
+    }
+
+    .feature-name.first{
+        padding-right: 5px;
+    }
+
+    .feature-second{
+        display: block;
+        margin: 0 4.493% 0 4.493%;
+    } 
+
+    .feature-third{
+        display: block;
+        margin: 0 0 0 0;
+    } 
+
+    .team-L{
+        padding: 0;
+        margin: 208px 2px 86px 0;
+    }
+
+    .team{
+        display: flex;
+    }
+
+    .avatar-description{
+        height: 123px;
+    }
+
+    .gigi{
+        width: 352px;
+        height: 415px;
+        display: block;
+        place-items: center;
+    }
+    
+    .avatar-gigi{
+        margin-left: 90px;
+    }
+
+    .gigi-dscr{
+        height: 124px;
+    }
+
+    .gigi-icons {
+        margin-top: -12px;}
+
+    .icon-ig-a{
+        height: 21px;
+    }
+
+    .icon-fb-a{ 
+        height: 21px;
+    }
+
+
+    .chris{
+        width: 352px;
+        height: 415px;
+        display: block;
+        place-items: center;
+        margin: 0 2.826% 0 2.754%;
+    }
+    .avatar-chris{
+        margin-left: 90px;
+    }
+
+    .icon-tw-a.chris-tw{
+        height: 21px;
+    }
+
+    
+
+    .kendal{
+        width: 352px;
+        height: 412px;
+        display: block;
+        place-items: center;
+        margin: 0;
+    }
+
+    .avatar-kendal{
+        margin-left: 90px;
+    }
+
+
+
+    /*        1440      FORM LANDING            */
+
+    .form-landing{
+        padding: 0;
+        margin: 182px 22.609% 0 22.826%;
+    }
+
+    .form-L1{
+        padding: 0;
+        margin-bottom: 38px;
+    }
+
+    .form-L2{
+        margin: 0 0 48px 0;
+    }
+
+    .form-landing-input{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .inpt-firstname,.inpt-email{
+        margin-bottom: 51px;
+        width: 47.94%;
+    }
+
+    .inpt-firstname{
+        margin-right: 3.851%;
+    }
+
+    .inpt-message{
+        width: 100%;
+    }
+
+
+
+    /*        1440            Foooter               */
+
+    footer.signup{
+        margin: 72px 10% 0 11.11%;
+    }
+
+    footer.landing{
+        margin: 32px 10.625% 0 11.4583%;
+        }
+
+    .footer.landing{
+        margin: 0;
     }
 
     .flex-container{
