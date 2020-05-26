@@ -1151,6 +1151,10 @@ button{
         margin: 32px 10.625% 0 11.4583%;
         }
 
+    .footer.signup{
+        margin: 0;
+    }
+
     .footer.landing{
         margin: 0;
     }
