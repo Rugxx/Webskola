@@ -658,7 +658,22 @@ input{
     margin: 0 0 24px 0;
 }
 
-
+textarea{
+    margin:0;
+    padding:0;
+    text-transform: capitalize;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    resize: none;
+    height: 74px;
+    width: 100%;
+    border:none;
+    border-bottom: solid 1px #D2D2D2;
+  }
 
 
 /*                  CONTENTS PROFILE            */
