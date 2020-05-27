@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+
 *{
+    margin: 0;
+    font-weight: 300;
     box-sizing: border-box
 }
 
@@ -12,350 +15,744 @@ a{
     color: purple;
 }
 
-html{
-    background: #CCCCCC;
+/*                  BODY                  */
+
+.land-page{
+    height: 4442px;
+    background-color:#CCCCCC;
 }
 
-body{
-    margin:0;
+body.profile{
+    background-color: #E5E5E5;
+}
+/*                  BG                      */
 
-    font-family: 'Roboto', sans-serif;
-    background-image: url(BG/BG-1.png);
-    background-size: cover;
+.BG.signup-page{
+    background-image: url(BG/sgnup-mobile.png);
+    height: 794px;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 794px;
-    color:white;
-    font-weight: 300;
+    background-size: cover;
 }
 
-.mrgn0{
-    margin: 0;
+.BG.landing-page{
+    background-image: url(BG/landing-mobile.png);
+    height: 664px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.flx-mdl-24px{
+.BG.profile-page{
+    background-image: url(BG/profile-mobile.png);
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E5E5E5;
+}
+
+/*                  NAV-BAR              */
+
+.nav-bar{
     display: flex;
-    justify-content: center;
-    margin: 24px 0 0 0;
-}
-
-/*                  NAVBAR              */
-
-nav{
-    margin:0;
-    display:inline-block;
-    width: 100%;
     height: 70px;
-    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4)
+
 }
 
-.crtim{
-    display: inline-block;
-    text-transform: capitalize;
-    margin: 24px 0 0 3.61%;
+.nav-bar.landing{
+    display: flex;
+    height: 62px;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4)
+}
+
+
+.nav-bar2{
+    display: none;
+}
+
+.C-tim{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
     font-size: 18px;
     line-height: 21px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+
 }
 
-ul .rect{
-    margin: 27px 6.39% 0 0;
+.C-tim.sgnup-mob{
+    margin: 24px 0 0 13px;
+}
+
+.C-tim.landing-mob{
+    margin: 15px 0 0 15px;
+}
+
+.C-tim.profile-mob{
+    margin: 24px 0 0 15px;
+}
+
+.rect{
+    margin: 27px 23px 0 0;
+    background-image: url(ICON/rect.png);
     width: 22px;
     height: 2px;
-    float: right;
+}
+
+.rect.rect-profile{
+    margin: 27px 25px 0 0;
+}
+
+.rect.landing{
+    margin: 18px 25px 0 0;
+
 }
 
 .rect.viens{
-    background-image: url(smimg/Rectangle\ 2.png);
-    margin: 0 0 4px 0;
-}
-
-.rect.divi{
-    background-image: url(smimg/Rectangle\ 2.png);
-    margin: 0 0 4px 0;
-}
-
-.rect.tris{
-    background-image: url(smimg/Rectangle\ 2.png);
     margin: 0 0 4px 0;
 }
 
 
-/*                  MAIN                */
+/*                  HEADER                      */
+
+.landing-header-1{
+    margin: 112px 14.82% 0 4%;
+    padding-bottom: 1px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 53.2px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.landing-header-2{
+    margin: 9px 6.353% 0 3.53%;
+    padding: 1px 0 0 1px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18.2px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+}
+
+.red-watch{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 42px 51.12% 0 3.765%;
+    width: 179px;
+    height: 54px;
+    background-color: #F44336;
+    box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
+    border-radius: 3px;
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 17px;
+    
+}
 
 
-.card-s{
-    position: relative;
+/*                   CARD                        */
+
+.signup-card{
+
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 23px;
+    width: 94.118%;
+    margin: 51px 2.82% 0 3.059%;
+    height: 517px;
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+}
+
+.signup-header{
+    margin: 0 20px 0 20px;
     background: linear-gradient(90deg, #AB47BC 0%, #7B1FA2 100%);
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12), 0px 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
     height: 150px;
-    margin: 51px 8.89% 0 9.177%;
+    text-align: center;
+    position: relative;
+}
+
+.txt-sgn-up{
+    padding: 32px 0 0 1px;
+}
+
+.txt-form-header{
+    padding-top: 142px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.signup-content{
+    margin-top: -110px ;
+    height: 477px;
+    background-color: white;
+    border-radius: 3px;
 }
 
 
-.sgnup{
-    padding-top: 32px;
+
+/*                      CONTENTS  LANDING                  */
+
+
+.content-landing{
+    margin: -54px 2.352% 0 2.352%;
+    height: 3718px;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: white;
+}
+
+
+.landing-content-h1{
+    padding-top: 94px;
     text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 36.4px;
+    line-height: 43px;
+    color: #3C4858;
+}
+
+.landing-content-h2{
+    margin: 38px 3.95% 162px 5.185%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 17.5px;
+    line-height: 24px;
+    text-align: center;
+    color: #999999;
+}
+
+.feature{
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.feature-first{
+    display: block;
+    height: 201px;
+    width: 328px;
+    place-items: center;
+    margin: 0 3px 0 0;
+    
+}
+
+.feature-second{
+    display: block;
+    margin-top: 108px;
+    height: 201px;
+    width: 328px;
+    place-items: center;
+    margin: 108px -2px 0 0;
+}
+
+.feature-third{
+    display: block;
+    margin-top: 108px;
+    width: 328px;
+    place-items: center;
+    height: 201px;
+    margin: 108px -2px 0 0;
+}
+
+.feature-name{
+    text-transform: capitalize;
+    margin-top: 31px;
+    font-weight: 500;
     font-size: 20px;
     line-height: 23px;
+    height: 24px;
+    text-align: center;
+    color: #3C4858;
+}
+
+.feature-description{
+    margin-top:18px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+}
+
+.team-L{
+    padding: 0;
+    margin: 207px 0 86px 0;
+}
+
+.form-L1{
+    padding: 0;
+    margin: 0 0 37px 0;
+}
+
+.form-L2{
+    margin: 0 0 47px 0;
+    font-weight: 300;
+    font-size: 18.2px;
+    line-height: 24px;
+    text-align: center;
+    color: #999999;
+}
+
+.team{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.gigi{
+    width: 372px;
+    height: 411px;
+    display: block;
+    place-items: center;
+}
+
+.chris{
+    width: 372px;
+    height: 411px;
+    display: block;
+    place-items: center;
+}
+
+.kendal{
+    width: 372px;
+    height: 411px;
+    display: block;
+    place-items: center;
+}
+
+/*                      AVATARS                     */
+
+.avatar{
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.3), 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.avatar-name{
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 18.2px;
+    line-height: 22px;
+    color: #3C4858;
     text-transform: capitalize;
 }
 
+.avatar-title{
+    margin-top: 7px;
+    font-weight: 500;
+    font-size: 13.65px;
+    line-height: 16px;
+    color: #777777;
+    text-transform: capitalize;
+}
+
+.avatar-description{
+    margin-top: 34px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    
+}
+
+
+.avatar-gigi{
+    background-image: url(avatar/AVATAR-gigi.png);
+    margin-left: 98px;
+}
+
+.avatar-chris{
+    background-image: url(avatar/AVATAR-chris.png);
+    margin-left: 100px;
+}
+
+.avatar-kendal{
+    background-image: url(avatar/AVATAR-kendal.png);
+    margin-left: 101px;
+}
+
+.gigi-icons{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 19px 0;
+}
+
+.chris-icons{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 21px 0;
+}
+
+.kendal-icons{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 0;
+}
+
+.avatar-profile-1{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-image: url(avatar/AVATAR-chris.png);
+    margin-top: -79px;
+}
+
+/*                      ICONS                       */
+
 .icon{
-    width: 20px;
-    height: 20px;
-    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    display: inline-block;
+    background-position: center;
+    height: 20px;
+    width: 20px;
 }
 
 .icon-fb{
-    background-image: url(icons/ICON\ Facebook.png);
-    margin-top: 36px;
-    margin-left: 33%;
+    background-image: url(ICON/ICON\ Facebook.png);
     width: 16px;
     height: 21px;
 }
 
 .icon-tw{
-    background-image: url(icons/ICON\ Twitter.png);
-    margin-left: 10.5%;
+    background-image: url(ICON/ICON\ Twitter.png);
     width: 17px;
     height: 21px;
 }
 
-.icon-download{
-    background-image: url(icons/ICON-download.png);
-}
-
-.icon-ig{
-    background-image: url(icons/ICON\ Instagram.png);
-}
-
 .icon-ggl{
-    background-image: url(icons/ICON\ GOOGLE+.png);
-    margin-left: 9.72%;
+    background-image: url(ICON/ICON\ GOOGLE+.png);
     width: 24px;
     height: 21px;
 }
 
 .icon-firstname{
-    background-image: url(icons/ICON\ Firstname.png);
+    background-image: url(ICON/ICON\ Firstname.png);
     width: 24px;
     height: 24px;
+    margin-right: 15px;
 }
 
 .icon-email{
-    background-image: url(icons/ICON\ email.png);
+    background-image: url(ICON/ICON\ email.png);
     width: 24px;
     height: 24px;
+    margin-right: 15px;
 }
 
 .icon-password{
-    background-image: url(icons/ICON\ password.png);
+    background-image: url(ICON/ICON\ password.png);
+    margin-right: 15px;
     width: 24px;
     height: 24px;
+
 }
 
 .icon-c{
-    background-image: url(icons/ICON\ copyright.png);
+    background-image: url(ICON/ICON\ copyright.png);
     height: 12px;
     width: 12px;
-    margin-top: 2px;
+    margin: 3px 4px 0 4px;
+}
+
+.icon-c-L{
+    background-image: url(ICON/icon-c-L.png);
+    height: 12px;
+    width: 12px;
+    margin: 3px 4px 0 4px;
 }
 
 .icon-heart{
-    background-image: url(icons/ICON\ heart.png);
-    width: 15px;
-    height: 12px;
-    margin-right: 2px;
+    background-image: url(ICON/ICON\ heart.png);
+    margin: 0 4px 0 4px;
+    height: 16px;
+    width: 14px;
+}
+
+.icon-heart-L{
+    background-image: url(ICON/icon-heart-L.png);
+    margin: 0 4px 0 4px;
+    height: 16px;
+    width: 14px;
+}
+
+.n-icon-download{
+    background-image: url(ICON/ICON-download.png);
+    margin: 0 6px 0 30px;
+}
+
+.n-icon-tw{
+    background-image: url(ICON/ICON\ Twitter.png);
+    width: 19px;
+    height: 23px;
+    margin: -3px 24px 0 27px;
+}
+
+.n-icon-fb{
+    background-image: url(ICON/ICON\ Facebook.png);
+    width: 18px;
+    height: 20px;
+    margin: 0 24px 0 0;
+}
+
+.n-icon-ig{
+    background-image: url(ICON/ICON\ Instagram.png);
+    width: 18px;
+    height: 20px;
 }
 
 .icon-triangle{
-    background-image: url(icons/ICON\ PLAY.png);
+    background-image: url(ICON/ICON\ PLAY.png);
     width: 15px;
     height: 18px;
-    margin: 19px 3px 17px 36px;
+    margin-right: 3px;
 }
 
-.icon-message{
-    background-image: url(icons/icon-message.png);
-    width: 70px;
+.icon-first-f{
+    background-image: url(ICON/ICON-1st-feature.png);
+    width: 100%;
     height: 70px;
-    margin: 0 2px 0 0;
 }
 
-.icon-2nd-feature{
-    background-image: url(icons/ICON-2nd\ feature.png);
-    width: 70px;
+.icon-second-f{
+    background-image: url(ICON/ICON-2nd\ feature.png);
+    width: 100%;
     height: 70px;
-    margin: 0 129px 0 129px;
-
 }
 
-.icon-3rd-feature{
-    background-image: url(icons/ICON-3rd-feature.png);
-    width: 70px;
+.icon-third-f{
+    background-image: url(ICON/ICON-3rd-feature.png);
+    width: 100%;
     height: 70px;
-    margin: 0 129px 0 129px;
-
 }
 
-.a-icon-tw{
-    background-image: url(icons/ICON\ TWITTER-a.png);
+.icon-tw-a{
+    background-image: url(ICON/ICON\ TWITTER-a.png);
     width: 17px;
     height: 18px;
 }
 
-.a-icon-ig{
-    background-image: url(icons/ICON\ INSTAGRAM-a.png);
-    width: 16px;
-    height: 18px;
+.icon-ig-a{
+    background-image: url(ICON/ICON\ INSTAGRAM-a.png);
     margin: 0 29px 0 29px;
-}
-
-.a-icon-fb{
-    background-image: url(icons/ICON\ FACEBOOK-a.png);
     width: 16px;
     height: 18px;
 }
 
-.a-icon-ld{
+.icon-fb-a{
+    background-image: url(ICON/ICON\ FACEBOOK-a.png);
+    width: 16px;
+    height: 18px;
+}
+
+.icon-in-a{
+    background-image: url(ICON/ICON\ LINKEDIN-a.png);
     margin-left: 29px;
-    background-image: url(icons/ICON\ LINKEDIN-a.png);
     width: 16px;
     height: 18px;
 }
 
-.a-icon-ggl{
-    background-image: url(icons/ICON\ GOOGLE+-a.png);
+.icon-ggl-a{
+    background-image: url(ICON/ICON\ GOOGLE+-a.png);
     width: 24px;
     height: 18px;
 }
 
-.a-icon-yt{
-    background-image: url(icons/ICON\ YOUTUBE-a.png);
+.icon-yt-a{
+    background-image: url(ICON/ICON\ YOUTUBE-a.png);
+    margin: 0 28px 0 22px;
     width: 18px;
     height: 18px;
-    margin: 0 28px 0 22px;
 }
 
-.avatar{
-    width: 170px;
-    height: 170px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 90px;
-    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+.sgn-up-icons{
+    margin: 36px 0 0 6px;
+    display: flex;
+    justify-content: center;
 }
 
-.avatar-gigi-1{
-    background-image: url(avatar/AVATAR-gigi.png);
-    margin: 86px 119px 0 116px;
+.icon.sgnup-mobile-tw{
+    margin: 0 35px 0 38px;
 }
 
-.avatar-chris-1{
-    background-image: url(avatar/AVATAR-chris.png);
-    margin: 19px 117px 0 118px;
-}
 
-.avatar-kendall-1{
-    background-image: url(avatar/AVATAR-kendal.png);
-    margin: 21px 117px 0 118px;
-}
-
-.content-s{
-    height: 477px;
-    margin: -110px 3.33% 0 3.61%;
-    background-color: white;
-    border-radius: 3px;
-}
-
-.econtent{
-    padding-top: 142px;
-    text-align: center;
-}
-
-.inpt-txt{
-    color: rgba(0, 0, 0, 0.87);
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: capitalize;
-    font-weight: 400;
-}
-
-.gstrt{
-    margin-top: 44px;
-    color: #9C27B0;
-    text-transform: uppercase;
-}
+/*                      FORMS                   */
 
 form{
     margin: 34px 7.75% 0 6.5%;
 }
 
-.landing-form-mob{
-    margin: 47px 0 0 0;
-    color:999999;
-}
-
-.inpt.landing-form-name{
-    height: 25px;
-    padding: 0;
-}
-
-.inpt.landing-form-email{
-    margin: 52px 0 0 0;
-    height: 25px;
-    padding: 0;
-}
-
-
-.inpt.landing-form-message{
-    margin: 51px 0 0 0;
-    height: 78px;
-    padding: 0;
-}
-
 input{
-    display: block;
-    color: #999999;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: capitalize;
-    margin-left: 15px;
-    border: none;
-    border-color: #D2D2D2;
-    border-bottom: solid 1px;
     width: 100%;
+    border: none;
+    border-bottom: 1px solid #D2D2D2;
+    text-transform: capitalize;
 }
 
 .inpt{
     display: flex;
+    margin-bottom: 47px;
     height: 32px;
 }
 
+.form-link{
+
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: -3px;
+    color: #9C27B0;
+    font-size: 14px;
+    line-height: 16px;
+    height: 17px;
+}
+
+.form-landing{
+    margin: 185px 2.96% 0 3.7%;
+}
+
+.form-landing-input{
+    text-align: center;
+    margin: 0;
+}
+
+.inpt-firstname{
+    margin:0 0 52px 0 ;
+}
 
 .inpt-email{
-    margin-top: 47px;
+    margin: 0 0 51px 0;
+}
+
+.inpt-message{
+    height: 79px;
+    margin: 0 0 24px 0;
 }
 
 
 
-.inpt-password{
-    margin-top: 47px;
+
+/*                  CONTENTS PROFILE            */
+
+.content-profile{
+    height: 2313px;
+    margin: -61px 2.118% 0 2.353%;
+    background-color: white;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
 }
 
-footer{
-    height: 63px;
+.content-profile-description{
+    display: flex;
+    justify-content: center;
+    margin: 0 3.448% 0 4.187%;
+}
+
+.profile-chris{
+    margin-top: 102px;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.profile-name{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 25.55px;
+    height: 30px;
+    color: #3C4858;
+    text-align: center;
+}
+
+.profile-title{
+    text-transform: uppercase;
+    margin: 15px 0 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    height: 17px;
+    color: #333333;
+    text-align: center;
+}
+
+.profile-description{
+    margin: 45px 0 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+}
+
+.profile-buttons{
+    margin-top: 76px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-prof{
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 12px;
+    height: 15px;
+}
+
+.photos{
+    margin: 51px 3.448% 0 3.448%;
+}
+
+/*                      Foooter                 */
+
+.footer{
+    font-family: 'Roboto';
     margin: 66px 18% 0 7.25%;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     text-transform: uppercase;
+    color: white;
+}
+
+.footer.landing{
+    margin: 33px 17.41% 0 7.059% ;
+    color: black;
+
+}
+
+.footer.profile{
+    margin: 33px 17.41% 27px 7.059% ;
+    color: black;
+
 }
 
 .flex-container{
@@ -365,497 +762,47 @@ footer{
 
 .footer-end{
     display: flex;
-    margin: 30px 7.1% 0 18%;
+    margin: 30px 23px 0 0;
     text-transform: none;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
     font-weight: 400;
-}
-
-.footer-landing{
-    color: #333333;
-    margin:33px 74px 18px 30px;
-    
-}
-
-.nav-bar2{
-    display: none;
-}
-
-/*                      LANDING PAGE               */
-
-.landing-page{
-    background: none;
-    
-}
-
-.Header-2{
-    margin:0;
-
-    font-family: 'Roboto', sans-serif;
-    background-image: url(BG/BG\ HEADER-1.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 664px;
-    color:white;
-    font-weight: 300;
-}
-
-.header-content{
-    height: 416px;
-    margin: 112px 6.35% 0 3.53%;
+    justify-content: flex-end;
 }
 
 
+/*                      PHOTOS                      */
 
-
-@media screen and (min-width: 768px){
-
-    div.content-landing{
-        margin-top: -62px ;
-    }
-
-    body{
-        background-image: url(BG/BG-big.png);
-    }
-
-    .Header-2{
-        background-image: url(BG/BG\ HEADER-2.png);
-        height: 597px;
-    }
-
-    button.red-watch{
-        margin: 43px 0 0 0;
-    }
-
-    .header-content{
-        margin: 107px 3.65%  0 3.13%;
-    }
-
-    div.smol-h-landing-conent-h-2{
-        margin: 38px 12px 0 13px;
-    }
-
-    .rect{display: none;}
-
-    ul{
-        display: flex;
-    }
-
-    .nav-bar2{
-        display: flex;
-        margin-left: 36.4%;
-
-    }
-
-    .navtxt{
-        margin-top: 28px;
-        text-transform: uppercase;
-        font-size: 12px;
-        line-height: 14px;
-    }
-
-    .n-icon-download{
-        background-image: url(icons/ICON-download.png);
-        margin: 25px 6px 0 30px;
-    }
-
-    .n-icon-tw{
-        background-image: url(icons/ICON\ Twitter.png);
-        width: 19px;
-        height: 23px;
-        margin: 23px 0 0 27px;
-    }
-
-    .n-icon-fb{
-        background-image: url(icons/ICON\ Facebook.png);
-        width: 18px;
-        height: 20px;
-        margin: 23px 0 0 24px;
-    }   
-
-    .n-icon-ig{
-        background-image: url(icons/ICON\ Instagram.png);
-        width: 18px;
-        height: 20px;
-        margin: 23px 0 0 24px;
-    }
-
-    div.first-feature{
-        margin: 162px 0 0 28.74%;
-    }
-
-    div.second-feature{
-        margin: 107px 0 0 28.47%;
-    }
-
-    div.third-feauture{
-        margin: 110px 0 0 28.075%;
-    }
-
-
-    .card-s{
-        height: 150px;
-        margin: 52px 29.9% 0 30%;
-    }
-
-    .content-s{
-        margin: -110px 27.5% 0 27.6%;
-    }
-
-    footer{
-        margin: 74px 35% 0 5.09%;
-    }
-
-    .flex-container{
-        justify-content: unset;
-    }
-
-    .footertxt{
-        margin: 0 7.23% 0 0;
-    }
-
-    .footer-end{
-        margin: 31px 0 0 0;
-        float: right;
-    }
-
-    div.gigi-grid{
-        width: 713px;
-        margin: 86px 16px 0 19px;
-    }
-
-    div.avatar-gigi-1{
-        margin: 0;
-        place-self: center;
-
-    }
-
-    div.avatar-chris-1{
-        margin: 0;
-        place-self: center;
-    }
-
-    div.avatar-kendall-1{
-        margin:0 2px 0 0;
-        place-self: center;
-    }
-
-    div.avatar-description{
-        margin: 34px 0 0 0;
-    }
-
-    div.tab-chris{
-        margin-top: 20px;
-    }
-
-    div.tab-kendall{
-        margin: 21px 16px 0 19px;
-    }
-
-    div.description-chris{
-        height: unset;
-    }
-
-    div.description-kendall{
-        height: unset;
-    }
-
-    div.avatar-icons-2{
-        margin-top: 38px;
-    }
-
-    div.avatar-icons-3{
-        margin-top: 38px;
-    }
-}
-
-@media screen and (min-width: 1440px){
-
-    body{
-        background-image: url(BG/BG-desktop.png);
-    }
-
-    nav{
-        height: 23px;
-        background-color: unset;
-        margin: 38px 10.9% 0 10%;
-    }
-
-    .crtim,.nav-bar2,.navtxt{margin:0;}
-
-    .n-icon-download,.n-icon-tw,.n-icon-fb,.n-icon-ig{margin-top: 0;}
-
-    .navtxt{margin-top: 5px}
-    
-    .nav-bar2{margin-left: 48.959%;}
-
-    .card-s{margin: 60px 38.75% 0 38.75%}
-
-    .content-s{margin: -110px 37.29% 0 37.36%;}
-
-    footer{
-        margin:72px 10% 0 11.11%;
-        display: flex;
-        height: 17px;
-        white-space: nowrap;
-        width: -webkit-fill-available;
-        justify-content: space-between;
-    }
-
-    .footertxt{
-        margin: 1px 15.49% 1px 0;
-    }
-
-    .footer-end{margin: 0;}
-}
-
-
-
-/* ################             LANDIND                     */
-
-.work-with-us{
-    margin: 185px 12px 0 15px;
-}
-
-.nav-land-62px{
-    height: 62px;
-}
-
-.nav-land-15px{
-    margin: 15px 0 0 15px;
-}
-
-ul .rect-0{
-    margin: 15px 25px 0 0;
-}
-
-.title-53-2{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 53.2px;
-    line-height: 62px;
-    margin-left: 2px;
-
-}
-
-.title-18-2{
-    margin-top: 9px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18.2px;
-    line-height: 25px;
-    color: #FFFFFF;
-}
-
-.red-watch{
-    margin: 42px 0 0 0;
-    width: 179px;
-    height: 54px;
-    background: #F44336;
-    box-shadow: 0px 2px 2px rgba(244, 67, 54, 0.14);
-    border-radius: 3px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    display: flex;
-    text-transform: uppercase;
-    padding: 0;
-    border:none;
-}
-
-.red-watch-txt{
-    margin: 19px 0 0 0;
-    display: flex;
-}
-
-.content-landing{
-    height: 3718px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+.photo{
     border-radius: 6px;
-    margin: -54px 10px 0 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.smol-h-landing-conent-h{
-    display: inline-flex;
-    text-transform: unset;
-    margin: 94px 0 0 0;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36.4px;
-    line-height: 43px;
-    color: #3C4858;
-    width: 100%;
-    place-content: center;
+.photo-1{
+    background-image: url(photos/PHOTO\ 1.png);
+    height: 281px;
 }
 
-.smol-h-landing-conent-h-2{
-    margin: 38px 16px 0 21px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 17.5px;
-    line-height: 21px;
-    text-align: center;
-    color: #999999;
-}
-
-.smol-h-landing-conent-h-3{
-    display: flex;
-    text-transform: unset;
-    margin: 207px 0 0 1px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36.4px;
-    line-height: 43px;
-    color: #3C4858;
-    justify-content: center;
-}
-
-.wrk-w-us{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.first-feature{
-    display: grid;
-    margin: 162px 36px 0 41px;
-    place-items: center;
-    width: 328px;
-}
-
-.second-feature{
-    display: grid;
-    margin: 108px 39px 0 38px;
-    place-items: center;
-    width: 328px;
-}
-
-.third-feauture{
-    display: grid;
-    margin: 110px 39px 0 38px;
-    place-items: center;
-    width: 328px;
-}
-
-.first-ic-h-1{
-    margin: 31px 0 0 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    height: 24px;
-    text-align: center;
-    color: #3C4858;
-    text-transform: capitalize;
-}
-
-.first-ic-h-2{
-    margin-top: 18px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    height: 58px;
-    text-align: center;
-    color: #999999;
-}
-
-.avatar-name{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18.2px;
-    line-height: 21px;
-    color: #3C4858;
-    margin: 32px 0 0 0;
-    text-transform: capitalize;
-    text-align: center;
-}
-
-.avatar-job{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13.65px;
-    line-height: 16px;
-    color: #777777;
-    margin: 7px 0 0 0;
-    text-transform: capitalize;
-    text-align: center;
-}
-
-.gigi-mobile-name{
-    margin-right: 4px;
-}
-
-.gigi-mobile-job{
-    margin-right: 1px ;
-}
-
-.avatar-description{
-    margin: 34px 15px 0 18px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #999999;
-}
-
-.description-chris{
-    margin-top: 35px;
-    height: 124px;
-}
-
-.description-kendall{
-    margin: 33px 16px 0 17px;
-    height: 124px;
-}
-
-.avatar-icons-1{
+.photo-2{
+    background-image: url(photos/PHOTO\ 2.png);
+    height: 565px;
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
 }
 
-.avatar-icons-2{
-    margin-top: -14px;
-    display: flex;
-    justify-content: center;
+.photo-3{
+    background-image: url(photos/PHOTO\ 3.png);
+    height: 500px;
+    margin-top: 29px;
 }
 
-.avatar-icons-3{
-    margin-top: -11px;
-    display: flex;
-    justify-content: center;
+.photo-4{
+    background-image: url(photos/PHOTO\ 4.png);
+    height: 281px;
+    margin-top: 31px;
 }
-
-.px37{
-    margin: 37px 0 0 0;
-    color:#999999;
-    text-align: center;
-    font-weight: 300;
-}
-
-.gigi-grid{
-    display: grid;
-    width: 372px;
-}
+/*                      BUTTONS                     */
 
 button{
     border:none;
@@ -864,7 +811,7 @@ button{
     background: #9C27B0;
     box-shadow: 0px 2px 2px rgba(156, 39, 176, 0.2);
     border-radius: 3px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -874,3 +821,681 @@ button{
 
 }
 
+.button-studio{
+    width: 100px;
+    height: 104px;
+    box-shadow: unset;
+    border-radius: 4px;
+    box-shadow: 0px 4px 20px rgba(156, 39, 176, 0.45);
+
+}
+
+.button-work{
+    background-color: white;
+    height: 104px;
+    width: 100px;
+    margin: 0 3px 0 5px;
+    color: #555555;
+    box-shadow: unset;
+}
+
+.button-favorite{
+    background-color: white;
+    height: 104px;
+    width: 100px;
+    color: #555555;
+    box-shadow: unset;
+}
+
+
+/* .form-landing-button{} */
+
+
+/*                      MEDIA    768px                   */
+
+    /*              SIGNUP                      */
+
+@media screen and (min-width: 768px){
+
+    .BG.signup-page{
+        background-image: url(BG/sgnup-tablet.png);
+        height: 804px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .land-page{
+        height: 4135px;
+    }
+
+    .BG.landing-page{
+        background-image: url(BG/landing-tabled.png);
+        height: 597px;
+    }
+
+    .BG.profile-page{
+        background-color: #CCCCCC;
+        background-image: url(BG/profile-tablet.png);
+        height: 381px;
+    }
+
+    body.profile{
+        background-color:#CCCCCC;
+    }
+
+    .nav-bar.landing{
+        height: 67px;
+    }
+
+    .C-tim.sgnup-mob{
+        margin: 23px 0 0 24px;
+    }
+
+    .C-tim.landing-mob{
+        margin: 22px 0 0 24px;
+    }
+
+    .rect{display: none;}
+
+    .nav-bar2{
+        display: flex;
+        margin: 23px 40px 0 0;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 14px;
+        color: white;
+    }
+
+    .nav-bar2.landing{
+        margin:21px 36px 0 0;
+    }
+
+    .navtxt{
+        margin-top: 3px;
+    }
+
+    .landing-header-1{
+        margin: 107px 12.5% 0 3.125%;
+    }
+
+    .landing-header-2{
+        margin: 8px 3.646% 0 3.125%;
+    }
+
+    .red-watch{
+        margin: 43px 0 0 3.125%;
+    }
+
+/*                  LANDING CONTENT         */
+
+    .content-landing{
+        height: 3481px;
+        margin: -62px 1.302% 0 1.302%;
+    }
+
+    .landing-content-h2{
+        margin: 38px 1.563% 162px 1.693%;
+    }
+
+    .feature-first{
+        margin: 0 5px 0 0;
+    } 
+
+    .feature-second{
+        margin: 107px 3px 0 0;
+    } 
+
+    .feature-third{
+        margin: 110px 0 0 0;
+    } 
+
+    .team-L{
+        margin: 208px 1px 86px 0;
+
+    }
+
+    .gigi{
+        width: 713px;
+        height: 370px;
+        display: block;
+        place-items: center;
+    }
+    
+    .chris{
+        margin-top: 20px;
+        width: 713px;
+        height: 370px;
+        display: block;
+        place-items: center;
+    }
+    
+    .kendal{
+        margin-top: 21px;
+        width: 713px;
+        height: 369px;
+        display: block;
+        place-items: center;
+    }
+
+
+    .avatar-gigi{
+        margin-left: 270px;
+    }
+    
+    .avatar-chris{
+        margin-left: 270px;
+    }
+    
+    .avatar-kendal{
+        margin-left: 270px;
+    }
+
+    .avatar-description{
+        margin-top: 35px;
+        height: 81px;
+    }
+
+    .gigi-icons{
+        margin-top: -11px;
+    }
+
+    .chris-icons{
+        margin-top: -11px;
+    }
+
+    .kendal-icons{
+        margin-top: -12px;
+    }
+
+    .form-landing{
+        margin-right: 2.139%;
+        margin-left: 2.139%;
+    }
+
+    .form-L2{
+        margin: 38px 0 47px 0;
+        line-height: 21px;
+    }
+    
+    .inpt-message{
+        margin-bottom: 25px;
+    }
+
+    
+
+    /*                  INDEX               */
+
+    .signup-card{
+        width: 44.911%;
+        margin: 51px 27.48% 0 27.60%;
+    }
+
+
+    .txt-form-header{
+        padding-top: 143px;
+    }
+
+    form{
+        margin: 33px 5.38% 0 7.366%;
+    }
+
+
+/*      768         Profile             */
+
+
+
+.C-tim.profile-mob{
+    margin: 24px 0 0 24px;
+}
+
+.nav-bar2.bar2-landing{
+    margin: 22px 20px 0 0;
+}
+
+.content-profile{
+    height: 3774px;
+    margin: -61px 1.302% 0 1.302%;
+
+}
+
+.content-profile-description{
+    margin: 0 9.626% 0 9.626%;
+    padding-left: 2px;
+}
+
+.profile-description{
+    height: 99px;
+}
+
+.profile-buttons{
+    margin-top: 32px;
+    margin-right: 1px;
+}
+
+.button-work{
+    margin: 0 -2px 0 6px;
+}
+
+.photos{
+    margin: 51px 1.471% 0 1.604%;
+}
+
+.photo-1{
+    background-image: url(photos/PHOTO\ 1-2.png);
+    height: 542px;
+}
+
+.photo-2{
+    background-image: url(photos/PHOTO\ 2-2.png);
+    height: 1081px;
+    margin-top: 29px;
+}
+
+.photo-3{
+    background-image: url(photos/PHOTO\ 3-2.png);
+    height: 961px;
+    margin-top: 29px;
+}
+
+.photo-4{
+    background-image: url(photos/PHOTO\ 4-2.png);
+    height: 541px;
+    margin-top: 30px;
+}
+
+
+
+/*      768        Foooter             */
+
+
+    .footer{
+        margin: 74px 34.99% 0 5.09%;       
+    }
+
+    .footer.landing{
+        margin: 31px 35.156% 0 5.078%;
+    }
+
+    .flex-container{
+        justify-content: unset;
+    }
+
+    .footertxt{
+        margin-right: 34px;
+    }
+    
+    .footertxt.land{
+        margin-right: 33px;
+    }
+
+    .footer-end{
+        margin: 31px 0 0 0;
+    }
+
+    .footer.profile{
+        margin: 45px 34.635% 27px 5.208%;
+    }
+}
+
+/*                      MEDIA    1440px                   */
+             /*              SIGNUP                      */
+
+@media screen and (min-width: 1440px){
+
+    .BG.signup-page{
+        background-image: url(BG/sgnup-desktop.png);
+        height: 752px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .land-page{
+        height: 2792px;
+    }
+
+    .BG.landing-page{
+        background-image: url(BG/landing-desktop.png);
+        height: 726px;
+    }
+
+    .BG.profile-page{
+        background-image: url(BG/profile-desktop.jpg);
+    }
+
+
+    .nav-bar{
+        height: 61px;
+        background-color: transparent;
+        margin: 0 10.9% 0 10%;
+        padding-top: 38px;
+    }
+
+    .nav-bar.landing{
+        height: 61px;
+        background-color: transparent;
+        margin: 0 11.25% 0 10.4167%;
+        padding-top: 37px;
+    }
+
+    .nav-bar2{
+        margin: 0;
+    }
+
+    .nav-bar2.landing{
+        margin: 0;
+        padding:0;
+    }
+
+    .landing-header-content{
+        margin: 146px 51.528% 0 10.347%;
+    }
+    
+    .landing-header-1{
+        margin: 0px 16px 0 3px;
+    }
+
+    .landing-header-2{
+        line-height: 23px;
+        margin: 11px 0 0 0;
+    }
+    
+    .red-watch{
+        margin: 42px 0 0 2px;
+    }
+
+    .C-tim.sgnup-mob{
+        margin: 1px 0 0 0;
+    }
+    
+    .C-tim.landing-mob{
+        margin: 2px 0 0 0;
+    }
+
+    .signup-card{
+        height: 509px;
+        width: 25.35%;
+        margin: 60px 37.29% 0 37.36%;
+    }
+
+    .signup-header{
+        margin: 0 21px 0 20px;
+    }
+
+    .signup-content{
+        margin-top: -109px ;
+        height: 470px;
+    }
+
+    form{
+        margin: 33px 8.49% 0 7.12%;
+    }
+
+    /*        1440          LANDING CONTENT         */
+
+    .content-landing{
+        height: 2045px;
+        margin: -60px 2.0833% 0 2.0833%;
+    }
+
+    .landing-content-h1{
+        padding-top: 95px;
+    }
+
+    .landing-content-h2{
+        margin: 38px 23.623% 161px 23.986%;
+    }
+
+    .feature{
+        display: flex;
+    }
+
+    .feature-first{
+        display: block;
+        margin: 0;
+    }
+
+    .feature-name.first{
+        padding-right: 5px;
+    }
+
+    .feature-second{
+        display: block;
+        margin: 0 4.493% 0 4.493%;
+    } 
+
+    .feature-third{
+        display: block;
+        margin: 0 0 0 0;
+    } 
+
+    .team-L{
+        padding: 0;
+        margin: 208px 2px 86px 0;
+    }
+
+    .team{
+        display: flex;
+    }
+
+    .avatar-description{
+        height: 123px;
+    }
+
+    .gigi{
+        width: 352px;
+        height: 415px;
+        display: block;
+        place-items: center;
+    }
+    
+    .avatar-gigi{
+        margin-left: 90px;
+    }
+
+    .gigi-dscr{
+        height: 124px;
+    }
+
+    .gigi-icons {
+        margin-top: -12px;}
+
+    .icon-ig-a{
+        height: 21px;
+    }
+
+    .icon-fb-a{ 
+        height: 21px;
+    }
+
+
+    .chris{
+        width: 352px;
+        height: 415px;
+        display: block;
+        place-items: center;
+        margin: 0 2.826% 0 2.754%;
+    }
+    .avatar-chris{
+        margin-left: 90px;
+    }
+
+    .icon-tw-a.chris-tw{
+        height: 21px;
+    }
+
+    
+
+    .kendal{
+        width: 352px;
+        height: 412px;
+        display: block;
+        place-items: center;
+        margin: 0;
+    }
+
+    .avatar-kendal{
+        margin-left: 90px;
+    }
+
+
+
+    /*        1440      FORM LANDING            */
+
+    .form-landing{
+        padding: 0;
+        margin: 182px 22.609% 0 22.826%;
+    }
+
+    .form-L1{
+        padding: 0;
+        margin-bottom: 38px;
+    }
+
+    .form-L2{
+        margin: 0 0 48px 0;
+    }
+
+    .form-landing-input{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .inpt-firstname.lnd,.inpt-email.lnd{
+        margin-bottom: 51px;
+        width: 47.94%;
+    }
+
+    .inpt-firstname.lnd{
+        margin-right: 3.851%;
+    }
+
+    .inpt-message{
+        width: 100%;
+    }
+
+    /*         1440             Profile               */
+
+
+    .C-tim.profile-mob{
+        margin: 0;
+    }
+
+    .nav-bar2.bar2-landing{
+        margin: 0;
+    }
+
+    .bar-profile{
+        margin: 0 10.208% 0 10.417%;
+        padding-top: 36px;
+    }
+
+    .content-profile{
+        height: 1195px;
+        margin-right: 2.014%;
+        margin-left: 2.153%;
+    }
+
+    .content-profile-description{
+        margin: 0 28.115% 0 28.115%
+    }
+
+    .profile-description{
+        margin-top: 45px;
+    }
+
+    .profile-buttons{
+        margin-right: 2px;
+    }
+
+    .photos{
+        margin: 21px 27.75% 0 27.75%;
+        /* margin: 51px 29.927% 0 29.855%; */ 
+        display: grid;
+        grid-gap: 30px;
+        grid-template: none;
+    }
+
+    .photo-1{
+        background-image: url(photos/PHOTO\ 1-3.png);
+        width: 262px;
+        height: 197px;
+        grid-column: col / span 1;
+        grid-row: row ;
+    }
+    
+    .photo-2{
+        background-image: url(photos/PHOTO\ 2-3.png);
+        width: 263px;
+        height: 351px;
+        margin: 0;
+        grid-column: col 2  ;
+        grid-row: row 1 / span 2;
+    }
+    
+    .photo-3{
+        background-image: url(photos/PHOTO\ 3-3.png);
+        width: 262px;
+        height: 394px;
+        margin: 0;
+        grid-column: col ;
+        grid-row: row 2 /span 3;
+    }
+    
+    .photo-4{
+        background-image: url(photos/PHOTO\ 4-3.png);
+        width: 263px;
+        height: 197px;
+        margin: 0;
+        grid-column: col 2  ;
+        grid-row: row 3 ;
+    }
+
+
+
+    /*        1440            Foooter               */
+
+    footer.signup{
+        margin: 72px 10% 0 11.11%;
+    }
+
+    footer.landing{
+        margin: 32px 10.625% 0 11.4583%;
+        }
+
+
+    footer.profile{
+        margin: 32px 10.278% 31px 11.458%;
+    }
+    .footer.signup{
+        margin: 0;
+    }
+
+    .footer.landing{
+        margin: 0;
+    }
+
+    .footer.profile{
+        margin: 0;
+    }
+
+    .flex-container{
+        display: inline-flex;
+        justify-content: unset;
+    }
+
+    .footertxt{
+        margin: 0 34px 0 0;
+    }
+
+    .footer-end{
+        display: inline-flex;
+        float: right;
+        margin: 0;
+    }
+
+}
