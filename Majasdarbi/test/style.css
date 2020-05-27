@@ -22,6 +22,9 @@ a{
     background-color:#CCCCCC;
 }
 
+body.profile{
+    background-color: #E5E5E5;
+}
 /*                  BG                      */
 
 .BG.signup-page{
@@ -66,16 +69,13 @@ a{
     background: rgba(0, 0, 0, 0.4)
 }
 
-.nav-bar.bar-profile{
-    margin-bottom: 310px;
-}
 
 .nav-bar2{
     display: none;
 }
 
 .C-tim{
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -884,6 +884,10 @@ button{
         height: 381px;
     }
 
+    body.profile{
+        background-color:#CCCCCC;
+    }
+
     .nav-bar.landing{
         height: 67px;
     }
@@ -1161,6 +1165,11 @@ button{
         height: 726px;
     }
 
+    .BG.profile-page{
+        background-image: url(BG/profile-desktop.jpg);
+    }
+
+
     .nav-bar{
         height: 61px;
         background-color: transparent;
@@ -1373,6 +1382,83 @@ button{
         width: 100%;
     }
 
+    /*         1440             Profile               */
+
+
+    .C-tim.profile-mob{
+        margin: 0;
+    }
+
+    .nav-bar2.bar2-landing{
+        margin: 0;
+    }
+
+    .bar-profile{
+        margin: 0 10.208% 0 10.417%;
+        padding-top: 36px;
+    }
+
+    .content-profile{
+        height: 1195px;
+        margin-right: 2.014%;
+        margin-left: 2.153%;
+    }
+
+    .content-profile-description{
+        margin: 0 28.115% 0 28.115%
+    }
+
+    .profile-description{
+        margin-top: 45px;
+    }
+
+    .profile-buttons{
+        margin-right: 2px;
+    }
+
+    .photos{
+        margin: 21px 27.75% 0 27.75%;
+        /* margin: 51px 29.927% 0 29.855%; */ 
+        display: grid;
+        grid-gap: 30px;
+        grid-template: none;
+    }
+
+    .photo-1{
+        background-image: url(photos/PHOTO\ 1-3.png);
+        width: 262px;
+        height: 197px;
+        grid-column: col / span 1;
+        grid-row: row ;
+    }
+    
+    .photo-2{
+        background-image: url(photos/PHOTO\ 2-3.png);
+        width: 263px;
+        height: 351px;
+        margin: 0;
+        grid-column: col 2  ;
+        grid-row: row 1 / span 2;
+    }
+    
+    .photo-3{
+        background-image: url(photos/PHOTO\ 3-3.png);
+        width: 262px;
+        height: 394px;
+        margin: 0;
+        grid-column: col ;
+        grid-row: row 2 /span 3;
+    }
+    
+    .photo-4{
+        background-image: url(photos/PHOTO\ 4-3.png);
+        width: 263px;
+        height: 197px;
+        margin: 0;
+        grid-column: col 2  ;
+        grid-row: row 3 ;
+    }
+
 
 
     /*        1440            Foooter               */
@@ -1385,11 +1471,19 @@ button{
         margin: 32px 10.625% 0 11.4583%;
         }
 
+
+    footer.profile{
+        margin: 32px 10.278% 31px 11.458%;
+    }
     .footer.signup{
         margin: 0;
     }
 
     .footer.landing{
+        margin: 0;
+    }
+
+    .footer.profile{
         margin: 0;
     }
 
